@@ -396,7 +396,7 @@ img { max-width: 100%; }
   .zt-mgr { display: flex; gap: 0.6rem; }
   .zt-mgr .zy-panel { flex: 1; }
   .zt-mgr-name { font-weight: bold; color: #8C2F22; margin-bottom: 0.25rem; }
-  .zt-mgr-bio { font-size: 0.7rem; color: #8A6F45; line-height: 1.4; }
+  .zt-mgr-bio { font-size: 0.68rem; color: #8A6F45; line-height: 1.35; }
   .zt-disc { font-size: 0.56rem; color: #8A6F45; line-height: 1.45; text-align: justify; padding: 0 1rem 0.35rem; }
   .zt-note { font-size: 0.65rem; color: #8A6F45; }
   .zt-pos { color: #B08F1C; font-weight: bold; }
@@ -462,7 +462,7 @@ img { max-width: 100%; }
       <div class="zy-panel">
         <div class="zy-panel-title">收益表现</div>
         <div class="zy-panel-body">
-          <div class="zt-note" style="margin-bottom:0.4rem;">成立 2025-08-29 · 成立以来 +2.41%（年化约2.44%）· 今年以来、近六月、近三月均跑赢同类平均</div>
+          <div class="zt-note" style="margin-bottom:0.25rem;">成立 2025-08-29 · 成立以来 +2.41%（年化约2.44%）· 今年以来、近六月、近三月均跑赢同类平均</div>
           <svg viewBox="0 0 360 168" style="width:100%;height:auto;display:block;" role="img" aria-label="玖泰1号单位净值走势图">
             <defs>
               <linearGradient id="navGrad" x1="0" y1="0" x2="0" y2="1">
@@ -507,10 +507,10 @@ img { max-width: 100%; }
             <circle cx="352" cy="27.6" r="4" fill="#B08F1C" stroke="#FDF6E8" stroke-width="1.5"><title>2026-08-24 净值 1.0241</title></circle>
             <text x="352" y="19.5" text-anchor="end" font-size="9" font-weight="bold" fill="#96751A">1.0241</text>
           </svg>
-          <div class="zy-note" style="margin-top:0.3rem;">单位净值走势 · 数据截至 2026-08-24（Wind）</div>
+          <div class="zy-note" style="margin-top:0.15rem;">单位净值走势 · 数据截至 2026-08-24（Wind）</div>
           <!-- 月度收益条形图 -->
-          <div style="margin-top:0.45rem;font-size:0.72rem;color:#8A6F45;">月度收益分布（%）</div>
-          <svg viewBox="0 0 250 132" style="width:100%;height:auto;display:block;margin-top:0.15rem;" role="img" aria-label="玖泰1号月度收益分布条形图">
+          <div style="margin-top:0.25rem;font-size:0.7rem;color:#8A6F45;">月度收益分布（%）</div>
+          <svg viewBox="0 0 250 132" style="width:100%;height:auto;display:block;margin-top:0.1rem;" role="img" aria-label="玖泰1号月度收益分布条形图">
             <!-- 参考线 0% / 0.25% -->
             <line x1="42" y1="4" x2="42" y2="122" stroke="#E8D9B6" stroke-width="1"/>
             <line x1="127" y1="4" x2="127" y2="122" stroke="#E8D9B6" stroke-width="1" stroke-dasharray="2,3"/>
@@ -554,14 +554,21 @@ img { max-width: 100%; }
             <rect x="42" y="116" width="34" height="7" rx="1.5" fill="#B08F1C" opacity="0.78"/>
             <text x="206" y="123" font-size="7.5" fill="#96751A">+0.10</text>
           </svg>
-          <div class="zt-note" style="margin:0.3rem 0 0.4rem;text-align:center;">平均月度 +0.21% · 最高 +0.47% · 最低 +0.05% · 月度正收益概率 100%（Wind 口径，月频净值测算）</div>
+          <div class="zt-note" style="margin:0.2rem 0 0.25rem;text-align:center;">平均月度 +0.21% · 最高 +0.47% · 最低 +0.05% · 月度正收益概率 100%（Wind 口径，月频净值测算）</div>
+          <div style="display:flex;justify-content:space-between;font-size:0.62rem;color:#8A6F45;margin-bottom:0.12rem;">
+            <span>同类排名 <b style="color:#96751A;">20/78</b>（前26%）</span><span>2026-08-24 · Wind</span>
+          </div>
+          <div style="height:6px;background:#F2E6CB;border-radius:3px;position:relative;overflow:visible;">
+            <div style="width:26%;height:100%;background:linear-gradient(90deg,#D9B64C,#B08F1C);border-radius:3px;"></div>
+            <div style="position:absolute;left:26%;top:-2px;width:2px;height:10px;background:#8A6F45;border-radius:1px;"></div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 近一年风险收益指标（左）+ 投资策略/配置比例/杠杆久期（右，三行竖排） -->
     <div class="zt-grid">
-      <div class="zy-panel" style="flex:1.1;">
+      <div class="zy-panel" style="flex:1;">
         <div class="zy-panel-title">近一年风险收益指标 <span class="zy-tag">2025-08-29成立至08-24</span></div>
         <div class="zy-panel-body">
           <table class="zy-table" style="flex:0 0 auto;">
@@ -577,7 +584,7 @@ img { max-width: 100%; }
           </table>
         </div>
       </div>
-      <div style="flex:1.7; display:flex; flex-direction:column; gap:0.35rem;">
+      <div style="flex:1; display:flex; flex-direction:column; gap:0.35rem;">
         <div class="zy-subpanel" style="flex:1.15;">
           <div class="zy-subpanel-title">投资策略</div>
           <div class="zy-subpanel-body">以短期限低风险票息品种构筑底仓，控制单券集中度，降低组合波动率和最大回撤，适度把控交易仓位利用市场超调机会增厚收益，力求产品净值稳健增长。</div>
