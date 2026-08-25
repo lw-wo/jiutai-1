@@ -11,6 +11,9 @@
   .zy-body { padding: 0.6rem 1.2rem 0.8rem; }
   .zt-grid { display: flex; gap: 0.875rem; align-items: stretch; }
   .zt-grid .zy-panel { flex: 1; margin-bottom: 0.7rem; }
+  /* 并排面板内容自动填满：表格撑开消除底部留白，保持左右等高 */
+  .zt-grid .zy-panel-body { display: flex; flex-direction: column; }
+  .zt-grid .zy-panel-body .zy-table { flex: 1; width: 100%; }
   .zt-grid2 { display: flex; gap: 0.875rem; }
   .zt-grid2 .zy-panel { flex: 1; }
   .zy-panel-body { padding: 0.55rem 0.8rem; }
