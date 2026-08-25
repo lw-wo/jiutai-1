@@ -361,7 +361,14 @@ img { max-width: 100%; }
 </style>
 <style>
   /* 一页通专用微调：单页紧凑布局，内容超出A4时允许滚动（微信/手机可下滑查看全部） */
-  .zy-page { height: auto; min-height: 297mm; overflow: visible; }
+  .zy-page { height: auto; min-height: 297mm; overflow: visible; position: relative; }
+  /* 封面模板页眉：顶部渐变金条（左深金→右渐隐，同 .zy-cover 设计） */
+  .zy-page::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3mm;
+    background: linear-gradient(to right, #C8A53D 0%, #D4B45C 22%, #E3CE8F 45%, #F0E6CE 68%, transparent 100%);
+    z-index: 1;
+  }
   .zy-body { padding: 0.6rem 1.2rem 0.8rem; }
   .zt-grid { display: flex; gap: 0.875rem; align-items: stretch; }
   .zt-grid .zy-panel { flex: 1; margin-bottom: 0.7rem; display: flex; flex-direction: column; }
