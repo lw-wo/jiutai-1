@@ -360,8 +360,8 @@ img { max-width: 100%; }
 
 </style>
 <style>
-  /* 一页通专用微调：单页紧凑布局，内容超出A4时允许滚动（微信/手机可下滑查看全部） */
-  .zy-page { height: auto; min-height: 297mm; overflow: visible; position: relative; }
+  /* 一页通专用微调：单页紧凑布局，加宽版面，内容收进一页A4 */
+  .zy-page { width: 250mm; height: auto; min-height: 297mm; overflow: visible; position: relative; }
   /* 封面模板页眉：顶部渐变金条（左深金→右渐隐，同 .zy-cover 设计） */
   .zy-page::before {
     content: '';
@@ -463,7 +463,7 @@ img { max-width: 100%; }
         <div class="zy-panel-title">收益表现</div>
         <div class="zy-panel-body">
           <div class="zt-note" style="margin-bottom:0.25rem;">成立 2025-08-29 · 成立以来 +2.41%（年化约2.44%）· 今年以来、近六月、近三月均跑赢同类平均</div>
-          <svg viewBox="0 0 360 168" style="width:100%;height:auto;display:block;" role="img" aria-label="玖泰1号单位净值走势图">
+          <svg viewBox="0 0 360 150" style="width:100%;height:auto;display:block;" role="img" aria-label="玖泰1号单位净值走势图">
             <defs>
               <linearGradient id="navGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0" stop-color="#B08F1C" stop-opacity="0.28"/>
@@ -475,17 +475,17 @@ img { max-width: 100%; }
             <line x1="40" y1="94" x2="352" y2="94" stroke="#E8D9B6" stroke-width="1" stroke-dasharray="3,3"/>
             <line x1="40" y1="47" x2="352" y2="47" stroke="#E8D9B6" stroke-width="1" stroke-dasharray="3,3"/>
             <!-- Y 轴刻度 -->
-            <text x="36" y="144" text-anchor="end" font-size="8" fill="#8A6F45">1.0000</text>
-            <text x="36" y="97" text-anchor="end" font-size="8" fill="#8A6F45">1.0100</text>
-            <text x="36" y="50" text-anchor="end" font-size="8" fill="#8A6F45">1.0200</text>
+            <text x="36" y="142" text-anchor="end" font-size="8" fill="#8A6F45">1.0000</text>
+            <text x="36" y="95" text-anchor="end" font-size="8" fill="#8A6F45">1.0100</text>
+            <text x="36" y="48" text-anchor="end" font-size="8" fill="#8A6F45">1.0200</text>
             <!-- X 轴日期（每两个点标注一次） -->
-            <text x="40" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">25-08</text>
-            <text x="92" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">25-10</text>
-            <text x="144" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">25-12</text>
-            <text x="196" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">26-02</text>
-            <text x="248" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">26-04</text>
-            <text x="300" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">26-06</text>
-            <text x="352" y="160" text-anchor="middle" font-size="8" fill="#8A6F45">26-08</text>
+            <text x="40" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">25-08</text>
+            <text x="92" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">25-10</text>
+            <text x="144" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">25-12</text>
+            <text x="196" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">26-02</text>
+            <text x="248" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">26-04</text>
+            <text x="300" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">26-06</text>
+            <text x="352" y="147" text-anchor="middle" font-size="8" fill="#8A6F45">26-08</text>
             <!-- 面积填充 -->
             <path d="M40,140.6 L66,135.9 L92,113.9 L118,111.5 L144,104.5 L170,92.3 L196,82.5 L222,67.5 L248,57.6 L274,44.5 L300,38.4 L326,32.8 L352,28.1 L352,150 L40,150 Z" fill="url(#navGrad)"/>
             <!-- 净值折线（月度，Wind 口径） -->
